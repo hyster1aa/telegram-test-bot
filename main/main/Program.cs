@@ -6,9 +6,11 @@ using Telegram.Bot.Types;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types.ReplyMarkups;
-using VacansySpace;
+using VacancySpace;
 using System.Net;
 using HHmodel;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace telegrambot
 {
@@ -26,6 +28,20 @@ namespace telegrambot
                 var endpoint = new Uri(url);
                 var result = client.GetAsync(endpoint).Result;
                 var jsn = result.Content.ReadAsStringAsync().Result;
+                VacanciesList VacancyLst = new VacanciesList();
+                try
+                {
+                    VacancyLst = JsonConvert.DeserializeObject<VacanciesList>(jsn);
+                    Console.WriteLine(VacancyLst.list.Count);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+                foreach (var item in VacancyLst.list)
+                {
+                    Console.WriteLine(item.name+" "+item.url+" "+item.area.name);
+                }
             }
         }
         public static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
