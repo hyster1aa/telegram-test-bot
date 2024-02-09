@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mixai\\telegram-test-bot\\main\\main\\main.csproj": {}
+    "C:\\Users\\mixai\\telegram-test-bot\\main\\Vacansy\\Vacansy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mixai\\telegram-test-bot\\main\\main\\main.csproj": {
+    "C:\\Users\\mixai\\telegram-test-bot\\main\\Vacansy\\Vacansy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mixai\\telegram-test-bot\\main\\main\\main.csproj",
-        "projectName": "main",
-        "projectPath": "C:\\Users\\mixai\\telegram-test-bot\\main\\main\\main.csproj",
+        "projectUniqueName": "C:\\Users\\mixai\\telegram-test-bot\\main\\Vacansy\\Vacansy.csproj",
+        "projectName": "Vacansy",
+        "projectPath": "C:\\Users\\mixai\\telegram-test-bot\\main\\Vacansy\\Vacansy.csproj",
         "packagesPath": "C:\\Users\\mixai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mixai\\telegram-test-bot\\main\\main\\obj\\",
+        "outputPath": "C:\\Users\\mixai\\telegram-test-bot\\main\\Vacansy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,16 +43,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            },
-            "Telegram.Bot": {
-              "target": "Package",
-              "version": "[19.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
