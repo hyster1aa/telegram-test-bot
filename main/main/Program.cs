@@ -54,20 +54,22 @@ namespace telegrambot
                 await botClient.SendTextMessageAsync(message.Chat, $"You said:\n{message.Text}");
                 try
                 {
-                    if (counter==0)
+                    foreach ( var item in somelist.list )
                     {
-                        await botClient.SendTextMessageAsync(message.Chat, somelist.list[counter].name + " " + somelist.list[counter].url + " " + somelist.list[counter].area.name);
+                        await botClient.SendTextMessageAsync(message.Chat, item.name + " " + item.url + " " + item.area.name);
                     }
-                    if(counter!=0 && message.Text.ToLower().Contains("дальше") || message.Text.ToLower().Contains("next"))
-                    {
-                        await botClient.SendTextMessageAsync(message.Chat, somelist.list[counter].name + " " + somelist.list[counter].url + " " + somelist.list[counter].area.name);
-                    }
-                    
-                    counter++;
+                    //if (counter==0)
+                    //{
+                    //    await botClient.SendTextMessageAsync(message.Chat, somelist.list[counter].name + " " + somelist.list[counter].url + " " + somelist.list[counter].area.name);
+                    //}
+                    //if(counter!=0 && message.Text.ToLower().Contains("дальше") || message.Text.ToLower().Contains("next"))
+                    //{
+                    //    await botClient.SendTextMessageAsync(message.Chat, somelist.list[counter].name + " " + somelist.list[counter].url + " " + somelist.list[counter].area.name);
+                    //}
                 }
                 catch
                 {
-                    await Console.Out.WriteLineAsync("Неудача");
+                    await Console.Out.WriteLineAsync("fail");
                 }
             }
         }
