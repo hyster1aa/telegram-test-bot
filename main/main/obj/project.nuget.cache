@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "C2oo2pvm1RQ703gsexnWT2e7ZGx/G+sCkHXVKuJdsTvB9XiTgcuFsiEigMOg6C1p+GeeJiYjuJWfSkeX+LZ9Fg==",
+  "dgSpecHash": "C5Pdzo2jlZ5Ts4uymTr/JM/xC311IIV4/D8PyreLG8n6x1+kyYwNIKJ48j4XCLp0jcICeN2/2Zi7bxp02Z6aFw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mixai\\telegram-test-bot\\main\\main\\main.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mixai\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\mixai\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\mixai\\.nuget\\packages\\telegram.bot\\19.0.0\\telegram.bot.19.0.0.nupkg.sha512"
   ],
   "logs": []
